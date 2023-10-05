@@ -64,5 +64,28 @@ namespace elaborazione_daticsv_cahino
 
             return longest;
         }
+        public void spnec(string filename, string filename1)
+        {
+            string s;
+            StreamWriter sw = new StreamWriter(@"temporaneo.csv");
+            StreamReader sr = new StreamReader(filename1);
+            int i = 0;
+            while ((s = sr.ReadLine()) != null)
+            {
+                if (i == 0)
+                {
+                    sw.WriteLine(s.PadRight(220));
+                }
+                else
+                {
+                    sw.WriteLine(s);
+                }
+                i++;
+            }
+            sw.Close();
+            sr.Close();
+            File.Replace(@"temporaneo.csv", filename, @"backup.csv");
+            File.Delete(@"backup.csv");
+        }
     }
 }

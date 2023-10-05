@@ -34,5 +34,10 @@ namespace elaborazione_daticsv_cahino
         {
             MessageBox.Show("Il campo più lungo è " + f.Long(filename1, lim) + " avente " + f.Long(filename1, lim).Length + " caratteri");
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            f.spnec(filename, filename1);
+        }
     }
 }
