@@ -39,5 +39,28 @@ namespace elaborazione_daticsv_cahino
         {
             f.spnec(filename, filename1);
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            f.TriRec(filename, lim, listView1);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            groupBox1.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string[] temp = new string[f.campi(filename, lim)];
+            string[] split = textBox6.Text.Split();
+            temp[0] = textBox1.Text;
+            temp[1] = textBox2.Text;
+            temp[2] = textBox3.Text;
+            temp[3] = textBox4.Text;
+            temp[4] = textBox5.Text;
+            f.NewRec(filename, lim, temp);
+            groupBox1.Hide();
+        }
     }
 }

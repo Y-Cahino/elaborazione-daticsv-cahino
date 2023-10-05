@@ -32,6 +32,24 @@
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
+            listView1 = new ListView();
+            groupBox1 = new GroupBox();
+            label5 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label4 = new Label();
+            label1 = new Label();
+            textBox5 = new TextBox();
+            textBox4 = new TextBox();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            button7 = new Button();
+            textBox6 = new TextBox();
+            label6 = new Label();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -56,7 +74,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(214, 88);
+            button3.Location = new Point(112, 48);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 2;
@@ -66,7 +84,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(319, 88);
+            button4.Location = new Point(12, 48);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
             button4.TabIndex = 3;
@@ -74,12 +92,172 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+            // button5
+            // 
+            button5.Location = new Point(220, 88);
+            button5.Name = "button5";
+            button5.Size = new Size(75, 23);
+            button5.TabIndex = 5;
+            button5.Text = "3 Record";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(220, 48);
+            button6.Name = "button6";
+            button6.Size = new Size(75, 23);
+            button6.TabIndex = 6;
+            button6.Text = "Nuovo Record";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
+            // listView1
+            // 
+            listView1.Location = new Point(12, 151);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(494, 261);
+            listView1.TabIndex = 7;
+            listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(textBox6);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(textBox5);
+            groupBox1.Controls.Add(textBox4);
+            groupBox1.Controls.Add(textBox3);
+            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(textBox1);
+            groupBox1.Location = new Point(521, 151);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(238, 261);
+            groupBox1.TabIndex = 8;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "groupBox1";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(130, 198);
+            label5.Name = "label5";
+            label5.Size = new Size(33, 15);
+            label5.TabIndex = 9;
+            label5.Text = "Note";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(130, 116);
+            label3.Name = "label3";
+            label3.Size = new Size(54, 15);
+            label3.TabIndex = 11;
+            label3.Text = "Tipo Info";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(130, 64);
+            label2.Name = "label2";
+            label2.Size = new Size(50, 15);
+            label2.TabIndex = 10;
+            label2.Text = "Nazione";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(120, 162);
+            label4.Name = "label4";
+            label4.Size = new Size(61, 15);
+            label4.TabIndex = 9;
+            label4.Text = "Tonnellate";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(130, 25);
+            label1.Name = "label1";
+            label1.Size = new Size(36, 15);
+            label1.TabIndex = 5;
+            label1.Text = "Anno";
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(9, 198);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(100, 23);
+            textBox5.TabIndex = 4;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(9, 154);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(100, 23);
+            textBox4.TabIndex = 3;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(9, 108);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(100, 23);
+            textBox3.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(9, 61);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 23);
+            textBox2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(9, 17);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 0;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(314, 48);
+            button7.Name = "button7";
+            button7.Size = new Size(75, 23);
+            button7.TabIndex = 9;
+            button7.Text = "Invia Nuovo";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(9, 232);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(100, 23);
+            textBox6.TabIndex = 12;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(130, 240);
+            label6.Name = "label6";
+            label6.Size = new Size(46, 15);
+            label6.TabIndex = 13;
+            label6.Text = "Campo";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(button7);
+            Controls.Add(groupBox1);
+            Controls.Add(listView1);
+            Controls.Add(button6);
+            Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -87,6 +265,8 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -96,5 +276,22 @@
         private Button button2;
         private Button button3;
         private Button button4;
+        private Button button5;
+        private Button button6;
+        private ListView listView1;
+        private GroupBox groupBox1;
+        private TextBox textBox4;
+        private TextBox textBox3;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private Label label4;
+        private Label label1;
+        private TextBox textBox5;
+        private Label label5;
+        private Label label3;
+        private Label label2;
+        private Button button7;
+        private Label label6;
+        private TextBox textBox6;
     }
 }
