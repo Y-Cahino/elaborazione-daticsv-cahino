@@ -8,12 +8,12 @@ namespace elaborazione_daticsv_cahino
 {
     internal class funzioni
     {
-        public int campi(string filename, char delim)
+        public int campi(string filename, char lim)
         {
             StreamReader sr = new StreamReader(filename);
             string s = sr.ReadLine();
             sr.Close();
-            return s.Split(delim).Length;
+            return s.Split(lim).Length;
         }
     }
 }
