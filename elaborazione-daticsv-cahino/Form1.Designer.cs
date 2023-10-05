@@ -36,6 +36,8 @@
             button6 = new Button();
             listView1 = new ListView();
             groupBox1 = new GroupBox();
+            label6 = new Label();
+            textBox6 = new TextBox();
             label5 = new Label();
             label3 = new Label();
             label2 = new Label();
@@ -47,8 +49,11 @@
             textBox2 = new TextBox();
             textBox1 = new TextBox();
             button7 = new Button();
-            textBox6 = new TextBox();
-            label6 = new Label();
+            textBox7 = new TextBox();
+            button8 = new Button();
+            button9 = new Button();
+            textBox8 = new TextBox();
+            textBox9 = new TextBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -141,6 +146,22 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(130, 240);
+            label6.Name = "label6";
+            label6.Size = new Size(46, 15);
+            label6.TabIndex = 13;
+            label6.Text = "Campo";
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(9, 232);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(100, 23);
+            textBox6.TabIndex = 12;
+            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -231,21 +252,46 @@
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
             // 
-            // textBox6
+            // textBox7
             // 
-            textBox6.Location = new Point(9, 232);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 12;
+            textBox7.Location = new Point(486, 48);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(100, 23);
+            textBox7.TabIndex = 10;
             // 
-            // label6
+            // button8
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(130, 240);
-            label6.Name = "label6";
-            label6.Size = new Size(46, 15);
-            label6.TabIndex = 13;
-            label6.Text = "Campo";
+            button8.Location = new Point(405, 48);
+            button8.Name = "button8";
+            button8.Size = new Size(75, 63);
+            button8.TabIndex = 11;
+            button8.Text = "Cancella";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
+            // button9
+            // 
+            button9.Location = new Point(592, 47);
+            button9.Name = "button9";
+            button9.Size = new Size(75, 23);
+            button9.TabIndex = 13;
+            button9.Text = "Ricerca";
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(486, 77);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(100, 23);
+            textBox8.TabIndex = 12;
+            // 
+            // textBox9
+            // 
+            textBox9.Location = new Point(673, 47);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(100, 23);
+            textBox9.TabIndex = 14;
             // 
             // Form1
             // 
@@ -253,6 +299,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox9);
+            Controls.Add(button9);
+            Controls.Add(textBox8);
+            Controls.Add(button8);
+            Controls.Add(textBox7);
             Controls.Add(button7);
             Controls.Add(groupBox1);
             Controls.Add(listView1);
@@ -268,6 +319,7 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -293,5 +345,10 @@
         private Button button7;
         private Label label6;
         private TextBox textBox6;
+        private TextBox textBox7;
+        private Button button8;
+        private Button button9;
+        private TextBox textBox8;
+        private TextBox textBox9;
     }
 }

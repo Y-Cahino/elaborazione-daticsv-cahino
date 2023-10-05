@@ -62,5 +62,15 @@ namespace elaborazione_daticsv_cahino
             f.NewRec(filename, lim, temp);
             groupBox1.Hide();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            f.search(filename1, lim, textBox9.Text);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            f.canc(filename, lim, textBox7.Text, textBox8.Text);
+        }
     }
 }
