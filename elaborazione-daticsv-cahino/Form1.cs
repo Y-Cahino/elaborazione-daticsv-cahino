@@ -5,12 +5,13 @@ namespace elaborazione_daticsv_cahino
         funzioni f;
         string filename;
         string filename1;
+        public int d;
         char lim = ';';
         public Form1()
         {
             string filename = @"Cahino1.csv";
             string filename1 = @"Cahino.csv";
-            
+            d = 0;
             InitializeComponent();
         }
 
@@ -21,7 +22,17 @@ namespace elaborazione_daticsv_cahino
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Il numero di campi presenti nel file è di: "+f.campi(filename,lim));
+            MessageBox.Show("Il numero di campi presenti nel file è di: " + f.campi(filename, lim));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            f.RandeLog(filename, filename1, lim);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Il campo più lungo è " + f.Long(filename1, lim) + " avente " + f.Long(filename1, lim).Length + " caratteri");
         }
     }
 }
